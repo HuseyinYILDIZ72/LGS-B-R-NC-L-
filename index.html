@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGS Sınavı Hazırlık</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyasını bağla -->
+</head>
+<body>
+    <!-- Giriş Sayfası -->
+    <div class="auth-container" id="login-container">
+        <h2>Giriş Yap</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Kullanıcı Adı" required>
+            <input type="password" id="login-password" placeholder="Şifre" required>
+            <button type="submit">Giriş</button>
+        </form>
+    </div>
+
+    <!-- Ana Sayfa -->
+    <div class="container" id="main-container">
+        <h1>LGS Sınavı Hazırlık</h1>
+
+        <h2>Ders Dosyası Ekleme Paneli</h2>
+        <form id="resource-form">
+            <select id="subject" required>
+                <option value="" disabled selected>Ders Seçin</option>
+                <option value="Türkçe">Türkçe</option>
+                <option value="Matematik">Matematik</option>
+                <option value="Fen Bilimleri">Fen Bilimleri</option>
+                <option value="Sosyal Bilgiler">Sosyal Bilgiler</option>
+                <option value="İngilizce">İngilizce</option>
+                <option value="Din Kültürü">Din Kültürü</option>
+            </select>
+            <input type="text" id="title" placeholder="Kaynak Başlığı" required>
+            <input type="url" id="link" placeholder="Kaynak Linki (Opsiyonel)">
+            <input type="file" id="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            <button type="submit">Kaydet</button>
+        </form>
+
+        <div id="resources">
+            <h2>Eklenen Kaynaklar</h2>
+            <div class="subject" id="turkce">
+                <h3>Türkçe</h3>
+                <ul id="resource-list-1"></ul>
+            </div>
+            <div class="subject" id="matematik">
+                <h3>Matematik</h3>
+                <ul id="resource-list-2"></ul>
+            </div>
+            <div class="subject" id="fen-bilimleri">
+                <h3>Fen Bilimleri</h3>
+                <ul id="resource-list-3"></ul>
+            </div>
+            <div class="subject" id="sosyal-bilgiler">
+                <h3>Sosyal Bilgiler</h3>
+                <ul id="resource-list-4"></ul>
+            </div>
+            <div class="subject" id="ingilizce">
+                <h3>İngilizce</h3>
+                <ul id="resource-list-5"></ul>
+            </div>
+            <div class="subject" id="din-kulturu">
+                <h3>Din Kültürü</h3>
+                <ul id="resource-list-6"></ul>
+            </div>
+        </div>
+    </div>
+    <p>
+        <center>Hüseyin YILDIZ &copy; <center> 
+    </p>
+
+    <script src="script.js"></script> <!-- JavaScript dosyasını bağla -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #001f3f, #0074D9); /* Lacivert ve mavi */
+    color: #00000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none; /* Başlangıçta gizli */
+}
+
+h1 {
+    color: #FFD700; /* Altın sarısı */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: block; /* Giriş sayfası başlangıçta gösterilir */
+}
+
+.auth-container h2 {
+    color: ##000000; /* Siyah */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Altın sarısı */
+    color: #001f3f; /* Lacivert */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #FFC107; /* Daha açık altın sarısı */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 12px;
+    border: 2px solid #0074D9; /* Mavi */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #FFD700; /* Sarı */
+    outline: none;
+}
+
+#resources {
+    margin-top: 20px;
+}
+
+.subject {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.05); /* Hafif siyah */
+    border: 1px solid #0074D9; /* Mavi */
+    border-radius: 10px;
+}
+
+.subject h3 {
+    color: #0074D9; /* Mavi */
+    margin-bottom: 10px;
+}
+
+#resource-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resource-list li {
+    padding: 12px;
+    border-bottom: 1px solid #0074D9; /* Mavi */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#resource-list li:hover {
+    background-color: rgba(255, 215, 0, 0.2); /* Altın sarısı */
+}
+
+.download-link {
+    color: #FFD700; /* Altın sarısı */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #FF4136; /* Kırmızı */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #FF0000; /* Daha koyu kırmızı */
+}
+
+/* Telif hakkı yazısını beyaz yap */
+p {
+    color: white;
+}
